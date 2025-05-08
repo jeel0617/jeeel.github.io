@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARLEYCIOUS! </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body style="margin:0;">
+
+    <div id="welcome-screen">
+        <h1>Welcome to <span class="logo-text">VARLEYCIOUS!</span></h1>
+        <button id="start-order-btn">Order Now</button>
+    </div>
+
+    <div id="order-type-screen">
+        <h2>How would you like your order?</h2>
+        <div class="order-options">
+            <button id="dine-in-btn" class="order-option-btn">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Dine In</span>
+            </button>
+            <button id="take-out-btn" class="order-option-btn">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Take Out</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="menu-screen">
+
+        <header class="header container">
+            <nav class="header--menu">
+                <div class="header-left">
+                    <button id="toggle-nav" class="toggle-btn">☰</button>
+                  </div>
+                  
+                  <div class="search--box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search" />
+                  </div>
+                  
+                  <div class="header-right">
+                    <div class="cart-icon">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>0</span>
+                    </div>
+                    <button id="toggle-cart" class="toggle-btn">🛒</button>
+                  </div>
+                  
+            </nav>
+        </header>
+
+        <div class="container main-content">
+
+            <section class="cover">
+                <div class="cover--overlay">
+                    <h1>VARLEY <span class="glow-yellow">CIOUS!</span></h1>
+                    <span class="slogan">Where size does not matter</span>
+                </div>
+            </section>
+
+           <div class="category-sidebar">
+                <div class="category-list">
+                    <div class="category-item active" data-category="all">All Items</div>
+                    <div class="category-item" data-category="meals">Meals</div>
+                    <div class="category-item" data-category="snacks">Snacks</div>
+                    <div class="category-item" data-category="drinks">Drinks</div>
+                </div>
+            </div>
+
+            <h2 class="section-heading">Menu Items</h2>
+
+            <div class="card--list">
+
+                <div class="card" data-category="meals">
+                    <img src="sandwich.jpg" alt="VarleWich Sandwich">
+                    <h4 class="card--title">VarleWich</h4>
+                    <div class="card--price">
+                        <div class="price">₱39.00</div>
+                        <i class="fa-solid fa-plus add-to-cart"></i>
+                    </div>
+                </div>
+
+                <div class="card" data-category="meals">
+                    <img src="pizza.png" alt="Varlezza Pizza">
+                    <h4 class="card--title">Varlezza</h4>
+                    <div class="card--price">
+                        <div class="price">₱20.00</div>
+                        <i class="fa-solid fa-plus add-to-cart"></i>
+                    </div>
+                </div>
+
+                <div class="card" data-category="snacks">
+                    <img src="hotdog.png" alt="VarleyDog Hotdog">
+                    <h4 class="card--title">VarleyDog</h4>
+                    <div class="card--price">
+                        <div class="price">₱25.00</div>
+                        <i class="fa-solid fa-plus add-to-cart"></i>
+                    </div>
+                </div>
+
+                <div class="card" data-category="meals">
+                    <img src="spagh.png" alt="Varletti Spaghetti">
+                    <h4 class="card--title">Varletti</h4>
+                    <div class="card--price">
+                        <div class="price">₱60.00</div>
+                        <i class="fa-solid fa-plus add-to-cart"></i>
+                    </div>
+                </div>
+
+                <div class="card" data-category="meals">
+                    <img src="friedchicken.png" alt="VarleyCrisps Fried Chicken">
+                    <h4 class="card--title">VarleyCrisps</h4>
+                    <div class="card--price">
+                        <div class="price">₱55.00</div>
+                        <i class="fa-solid fa-plus add-to-cart"></i>
+                    </div>
+                </div>
+
+                <div class="card" data-category="meals">
+                    <img src="carbonara.png" alt="Varbonara Pasta">
+                    <h4 class="card--title">Varbonara</h4>
+                    <div class="card--price">
+                        <div class="price">₱46.00</div>
+                        <i class="fa-solid fa-plus add-to-cart"></i>
+                    </div>
+                </div>
+
+                <div class="card" data-category="snacks">
+                    <img src="nuggets.png" alt="Varlegets Nuggets">
+                    <h4 class="card--title">Varlegets</h4>
+                    <div class="card--price">
+                        <div class="price">₱37.00</div>
+                        <i class="fa-solid fa-plus add-to-cart"></i>
+                    </div>
+                </div>
+
+                    <div class="card" data-category="drinks">
+                        <img src="varlecola.png" alt="VarleyCola Drink">
+                        <h4 class="card--title">VarleyCola</h4>
+                        <div class="card--price">
+                            <div class="price">₱20.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+
+                <div class="card" data-category="drinks">
+                    <img src="varlezest.png" alt="VarleyZest Drink">
+                    <h4 class="card--title">VarleyZest</h4>
+                    <div class="card--price">
+                        <div class="price">₱20.00</div>
+                        <i class="fa-solid fa-plus add-to-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-navigation">
+            <div class="side-nav-header">
+            </div>
+            <div class="side-nav-items">
+                <div class="side-nav-item" data-category="all">All Items</div>
+                <div class="side-nav-item" data-category="meals">Meals</div>
+                <div class="side-nav-item" data-category="snacks">Snacks</div>
+                <div class="side-nav-item" data-category="drinks">Drinks</div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3>My Orders</h3>
+                
+            </div>
+
+            <div class="order-items">
+                <div class="empty-cart">Your cart is empty</div>
+            </div>
+
+
+<div class="sidebar--footer">
+    <div class="total--amount">
+        <h5>Total</h5>
+        <div class="cart-total">₱0.00</div>
+    </div>
+    
+    
+    <div class="payment-method">
+        <h4>How would you like to pay?</h4>
+        <div class="payment-options">
+            <div class="payment-option">
+                <input type="radio" id="cash" name="payment" value="Cash" checked>
+                <label for="cash"> Pay at the Counter (Cash) </label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="credit" name="payment" value="Cashless">
+                <label for="counter"> Pay here (Cashless) </label>
+            </div>
+        </div>
+    </div>
+    
+    <button class="checkout-btn glow-white">Checkout</button>
+</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
